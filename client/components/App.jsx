@@ -2,11 +2,24 @@ import React from 'react';
 import PhotoGallery from './PhotoGallery'
 
 export default class App extends React.Component {
-  render() {
-    return (
-     <div>
-     	<PhotoGallery/>
-      </div>
-    );
-  }
+	constructor(){
+		super();
+		this.state = {};
+	}
+	componentDidMount() {
+		// most of the times you would load this dynamic data throigh an ejax call in this function
+	    this.setState({
+	    	imageGallery: [{img:'https://picsum.photos/200/300', caption:'I am image 1'},{img:'https://picsum.photos/200/300', caption:'I am image 2'},{img:'https://picsum.photos/200/300', caption:'I am image 3'},{img:'https://picsum.photos/200/300', caption:'I am image 4'},{img:'https://picsum.photos/200/300', caption:'I am image 5'},{img:'https://picsum.photos/200/300', caption:'I am image 6 of infinite gallery'}]
+	    })
+	}
+    render() {
+    	let {imageGallery} = this.state
+        return (
+            <div>
+            	{
+            		(imageGallery)? <PhotoGallery imageGallery={imageGallery}/>: undefined
+            	}
+      		</div>
+        );
+    }
 }

@@ -23,7 +23,7 @@ module.exports = {
       'client',
       'node_modules',
     ],
-    extensions: ['*', '.js', '.jsx', '.json'],
+    extensions: ['*', '.js', '.jsx', '.json', '.css'],
   },
   module: {
     rules: [
