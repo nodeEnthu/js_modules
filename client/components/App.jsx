@@ -1,10 +1,12 @@
 import React from 'react';
+import PhotoGallery from './PhotoGallery'
 
 export default class App extends React.Component {
   render() {
     return (
      <div>
-        <h1>The obligatory hello world .. am i owrking</h1>
-      </div>);
+     	<PhotoGallery/>
+      </div>
+    );
   }
 }

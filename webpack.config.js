@@ -18,6 +18,13 @@ module.exports = {
     path: path.resolve('dist'),
     filename: 'index_bundle.js'
   },
+  resolve: {
+    modules: [
+      'client',
+      'node_modules',
+    ],
+    extensions: ['*', '.js', '.jsx', '.json'],
+  },
   module: {
     rules: [
       { test: /\.css$/,
