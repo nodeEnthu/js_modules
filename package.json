@@ -6,6 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Gautam Mehra",
+  "license": "ISC",
+  "repository": "https://github.com/nodeEnthu/js_modules.git",
+  "dependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.6.0",
+    "webpack-dev-server": "^3.1.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
 }
