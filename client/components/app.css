@@ -1,5 +1,23 @@
-/* all your presets and normalizing stuff goes here*/
+/* all your presets and normalizing stuff goes here
+Some best-practice CSS that's useful for most apps */
 
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body{
 	margin: 0 auto;
 }
