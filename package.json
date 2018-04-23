@@ -10,6 +10,7 @@
   "license": "ISC",
   "repository": "https://github.com/nodeEnthu/js_modules.git",
   "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
     "path": "^0.12.7",
     "webpack": "^4.6.0",
     "webpack-dev-server": "^3.1.3"
