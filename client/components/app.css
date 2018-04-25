@@ -1,26 +1,27 @@
 /* all your presets and normalizing stuff goes here
 Some best-practice CSS that's useful for most apps */
 
-
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
-body{}
 
-.container{
-	width:50%;
-	margin: 5% auto;
+body {}
+
+.container {
+    width: 50%;
+    margin: 5% auto;
 }
