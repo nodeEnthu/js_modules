@@ -1,5 +1,7 @@
 import React from 'react';
-import './photoGallery.css'
+import './photoGallery.css';
+import PropTypes from 'prop-types';
+
 export default class PhotoGallery extends React.Component{
 	constructor(){
 		super();
@@ -43,3 +45,7 @@ export default class PhotoGallery extends React.Component{
 		)
 	}
 }
+
+PhotoGallery.propTypes = {
+  imageGallery: PropTypes.array.isRequired
+};
