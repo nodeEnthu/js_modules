@@ -25,18 +25,20 @@ export default class PhotoGallery extends React.Component{
 		let {imageGallery} = this.props;
 		let {currentIndex} =  this.state;
 		return (
-			<div className="carousel">
-				<h1></h1>
-				<i className="fas fa-chevron-left chevron-left" onClick={this.previous}></i>
-			    {
-					imageGallery.map((imgObj,index)=>
-						
-						<div key={'imgGallery'+index}>
-							<img src={imgObj.img} className={(index === currentIndex)? "selected" : undefined}/>
-						</div>
-					)
-				}
-				<i className="fas fa-chevron-right chevron-right" onClick={this.next}></i>
+			<div>
+				<h4>{imageGallery[currentIndex].caption}</h4>
+				<div className="carousel">
+					<i className="fas fa-chevron-left chevron-left" onClick={this.previous}></i>
+				    {
+						imageGallery.map((imgObj,index)=>
+							
+							<div key={'imgGallery'+index}>
+								<img src={imgObj.img} className={(index === currentIndex)? "selected" : undefined}/>
+							</div>
+						)
+					}
+					<i className="fas fa-chevron-right chevron-right" onClick={this.next}></i>
+				</div>
 			</div>
 		)
 	}
