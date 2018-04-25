@@ -15,7 +15,7 @@ export default class App extends React.Component {
     render() {
     	let {imageGallery} = this.state
         return (
-            <div >
+            <div className="container">
             	{
             		(imageGallery)? <PhotoGallery imageGallery={imageGallery}/>: undefined
             	}

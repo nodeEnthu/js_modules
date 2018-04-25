@@ -18,6 +18,9 @@ body {
 *:after {
   box-sizing: inherit;
 }
-body{
-	margin: 0 auto;
+body{}
+
+.container{
+	width:50%;
+	margin: 5% auto;
 }
